@@ -104,10 +104,13 @@ const vlSpec5 = {           //chart 5
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
 
   "repeat": ["NA_Sales", "EU_Sales", "JP_Sales", "Other_Sales"],
+  
   "columns": 2,
 
   "spec": {
     "data": {"url": "./dataset/videogames_wide.csv"},
+    "width": 500,
+  "height": 400,
 
     "mark": "bar",
 
