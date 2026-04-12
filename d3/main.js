@@ -16,9 +16,9 @@ svg.on("click", function(event) {
         .attr("cx", x)
         .attr("cy", y)
         .attr("r", 0)
-        .attr("fill", "black");
+        .attr("fill", "pink");
 
-    // animation (inspired by your file)
+    
     circle.transition()
         .duration(duration)
         .attr("r", 20);
