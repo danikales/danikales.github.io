@@ -3,55 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danika Lescano - Portfolio</title>
+    <title>Danika Lescano | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header class="page-header">
+        <nav class="site-nav">
+            <div class="brand">Danika Lescano</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="visualizations.html">Visualizations</a></li>
+                <li><a href="assignment3/index.html">Assignment 3</a></li>
+                <li><a href="d3/d3.html">D3</a></li>
+            </ul>
+        </nav>
 
-   
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="visualizations.html">Visualizations</a></li>
-            <li><a href="assignment3/index.html">Assignment 3</a></li>
-            <li><a href="d3/d3.html">d3</a></li>
-        </ul>
-    </nav>
-
-   
-    <header class="title">
-        <h1>Hi, I'm Danika!</h1>
-        <p>I like to design things!</p>
+        <section class="hero">
+            <div>
+                <p class="eyebrow">Interactive Arts & Technology Student</p>
+                <h1>Designing engaging experiences with clear visuals and thoughtful interaction.</h1>
+                <p class="hero-copy">I build creative digital projects, interactive data visualizations, and polished visual design systems for web and multimedia.</p>
+                <div class="hero-actions">
+                    <a class="button primary" href="#projects">View Projects</a>
+                    <a class="button secondary" href="#contact">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-card">
+                <div class="hero-stat">
+                    <span>4+</span>
+                    <p>projects showcased</p>
+                </div>
+                <div class="hero-stat">
+                    <span>6</span>
+                    <p>design-focused courses</p>
+                </div>
+            </div>
+        </section>
     </header>
 
-    
-    <section class="aboutme">
-        <p>I'm currently a student in Interactive Arts and Technology at SFU.</p>
-        <p>I have interests in 2D and 3D digital design, as well as model-making during my time at SFU.</p>
+    <main>
+        <section class="profile" id="about">
+            <div>
+                <h2>About Me</h2>
+                <p>Hello! I’m Danika, a student at SFU specializing in Interactive Arts and Technology. I enjoy combining strong visual design with thoughtful interaction to create meaningful digital experiences.</p>
+                <p>My work includes data-driven visualizations, web design, and multimedia storytelling. I’m passionate about user-centered design, digital art, and polished presentation.</p>
+            </div>
+            <div class="profile-card">
+                <h3>Core strengths</h3>
+                <ul>
+                    <li>Visual design & layout</li>
+                    <li>Interactive web experiences</li>
+                    <li>Data visualization</li>
+                    <li>Creative storytelling</li>
+                </ul>
+            </div>
+        </section>
 
-        <p>I have gained many skills and projects from these previous courses:</p>
-        <ul>
-            <li>IAT 201: Human Cognition & Interaction in Design</li>
-            <li>IAT 208: Drawing as Inquiry</li>
-            <li>IAT 235: Information Design</li>
-            <li>IAT 336: Materials in Design</li>
-        </ul>
+        <section class="projects" id="projects">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <p>Explore a selection of my recent work and course projects.</p>
+            </div>
+            <div class="project-grid">
+                <article class="project-card">
+                    <h3>Visualizations</h3>
+                    <p>Interactive charts and data stories built with clean, engaging visuals.</p>
+                    <a href="visualizations.html">Open project</a>
+                </article>
+                <article class="project-card">
+                    <h3>Assignment 3</h3>
+                    <p>A web project focused on structured design and responsive presentation.</p>
+                    <a href="assignment3/index.html">Open project</a>
+                </article>
+                <article class="project-card">
+                    <h3>D3 Exploration</h3>
+                    <p>Dynamic data-driven graphics created with D3.js for interactive learning.</p>
+                    <a href="d3/d3.html">Open project</a>
+                </article>
+            </div>
+        </section>
 
-        <p>I don't have the best coding skills, but I love designing!</p>
-        <p>I enjoy digital design, modeling, and collecting Pokémon cards, plushes, and figurines.</p>
+        <section class="skills" id="skills">
+            <div class="section-header">
+                <h2>Skills & Experience</h2>
+                <p>Strengths developed through SFU coursework, personal projects, and creative practice.</p>
+            </div>
+            <div class="skill-list">
+                <div class="skill-item"><strong>Design</strong><span>Typography, layout, color, branding</span></div>
+                <div class="skill-item"><strong>Web</strong><span>HTML, CSS, responsive UI, accessibility</span></div>
+                <div class="skill-item"><strong>Data</strong><span>Visualization, chart design, storytelling</span></div>
+                <div class="skill-item"><strong>Creative</strong><span>Illustration, model-making, multimedia</span></div>
+            </div>
+        </section>
 
-        <p>Here is one of my favourite Pokémon: <strong>Solosis</strong>!</p>
-        <a href="https://www.pokemon.com/us/pokedex/solosis" target="_blank">
-            <img id="solosis-container" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/577.png" 
-            alt="Solosis" width="300" height="300">
-        </a>
-    </section>
+        <section class="contact-panel" id="contact">
+            <div>
+                <h2>Let’s work together</h2>
+                <p>If you’d like to collaborate on a design or web project, I’m happy to connect and share ideas.</p>
+                <a class="button primary" href="mailto:danika@example.com">Email me</a>
+            </div>
+        </section>
+    </main>
 
-    <section class="contact">
-        <a class="contact-link" href="https://youtu.be/Aq5WXmQQooo?si=YiWpfWobL4s9V7LN" target="_blank">
-            Let's get in touch!
-        </a>
-    </section>
+    <footer class="site-footer">
+        <p>© <span id="current-year"></span> Danika Lescano. Crafted with care.</p>
+    </footer>
 
     <script src="main.js"></script>
 </body>
